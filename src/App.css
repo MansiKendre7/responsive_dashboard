@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a0a461;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+.product-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card .card-body {
+  text-align: center;
+}
+
+.product-card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-card .card-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.product-card .form-group {
+  margin-bottom: 10px;
+}
+
+.product-card .form-control {
+  width: 100px;
+}
+
+.product-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.product-table th,
+.product-table td {
+  text-align: center;
+}
+
+.product-table .total-row td {
+  font-weight: bold;
+}
+
+/* Center the products */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* NavBar Styles */
+.navbar {
+  background-color: #fff;
+  padding: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buy-now-button {
+  margin-left: auto;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+  background-color: #0056b3;
+}
+.buy-now-button {
+  margin-left: auto;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+  background-color: #0056b3;
+}
+.product-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.product-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.product-table .total-row td {
+  font-weight: bold;
+  background-color: #f2f2f2;
 }
